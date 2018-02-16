@@ -37,6 +37,7 @@
         "BUCK"
       ]
     disabledPackages: [
+      "atom-ide-ui",
       "background-tips"
       "exception-reporting"
       "metrics"
