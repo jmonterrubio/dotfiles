@@ -37,13 +37,13 @@
         "BUCK"
       ]
     disabledPackages: [
-      "atom-ide-ui",
+      "atom-ide-ui"
       "background-tips"
       "exception-reporting"
       "metrics"
       "react"
+      "rulerz"
       "linter-rubocop"
-      "tree-view"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -56,15 +56,11 @@
       "vendor"
     ]
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
-    fontFamily: "Menlo"
-    invisibles: {}
+    fontSize: 15
     showIndentGuide: true
-    softWrapAtPreferredLineLength: true
+    showInvisibles: true
+    tabLength: 4
   "go-plus":
     panel:
       currentHeight: "24.11111111111111vh"
@@ -93,6 +89,9 @@
     ]
   stylefmt:
     formatOnSave: true
+  "tree-view":
+    hideIgnoredNames: false
+    hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
 ".js.jsx.react.source":

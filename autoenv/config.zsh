@@ -1,3 +1,4 @@
 # Autoenv
 AUTOENV_ENABLE_LEAVE="yes"
-source ~/.autoenv/activate.sh
+#source ~/.autoenv/activate.sh 
+

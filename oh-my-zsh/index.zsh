@@ -4,7 +4,7 @@ export ZSHCUSTOM=$ZSH/custom
 ZSH_THEME="spaceship"
 DEFAULT_USER=$(whoami)
 
-plugins=(git web-search zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git web-search zsh-history-substring-search zsh-syntax-highlighting zsh-autosuggestions zsh-completions autoenv) 
 
 source $ZSH/oh-my-zsh.sh
 source $ZSHCUSTOM/themes/spaceship.zsh-theme
@@ -12,3 +12,7 @@ source $ZSHCUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-sea
 source $ZSHCUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSHCUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSHCUSTOM/plugins/zsh-completions/zsh-completions.plugin.zsh
+
+
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_NODE_SHOW=false
