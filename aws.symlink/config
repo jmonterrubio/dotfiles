@@ -1,0 +1,5 @@
+# Configuration for aws cli
+[default]
+region = eu-west-1
+output = json
+

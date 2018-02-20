@@ -45,6 +45,53 @@ setup_gitconfig () {
   fi
 }
 
+setup_aws () {
+  if ! [ -f aws.symlink/credentials ]
+  then
+    info 'setup aws-cli'
+
+    user ' - What is your aws access key id?'
+    read -e access_key_id
+    user ' - What is your aws secret access key?'
+    read -e secret_access_key
+
+    local sak=$(escape_string $secret_access_key)
+
+    sed -e "s/ACCESSKEYID/$access_key_id/g" -e "s/SECRETACCESSKEY/$sak/g" aws.symlink/credentials.example > aws.symlink/credentials
+
+    success 'aws-cli'
+  fi
+}
+
+escape_string () {
+      # start with the original pattern
+    local escaped=$1
+
+    # escape all backslashes first
+    escaped="${escaped//\\/\\\\}"
+
+    # escape slashes
+    escaped="${escaped//\//\\/}"
+
+    # escape asterisks
+    escaped="${escaped//\*/\\*}"
+
+    # escape full stops
+    escaped="${escaped//./\\.}"
+
+    # escape [ and ]
+    escaped="${escaped//\[/\\[}"
+    escaped="${escaped//\[/\\]}"
+
+    # escape ^ and $
+    escaped="${escaped//^/\\^}"
+    escaped="${escaped//\$/\\\$}"
+
+    # remove newlines
+    escaped="${escaped//[$'\n']/}"
+    echo "$escaped"
+}
+
 
 link_file () {
   local src=$1 dst=$2
@@ -134,6 +181,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+setup_aws
 
 info "installing dependencies"
 if source bin/dot | while read -r data; do info "$data"; done
