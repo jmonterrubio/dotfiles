@@ -1,6 +1,6 @@
 "*":
   "ansible-vault":
-    path: "ansible-vault"
+    path: "~/.local/bin/ansible-vault"
   "atom-beautify":
     crystal:
       beautify_on_save: true
@@ -57,7 +57,6 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
@@ -69,8 +68,7 @@
   "linter-eslint":
     useGlobalEslint: true
   "linter-rubocop": {}
-  "linter-ui-default":
-    panelHeight: 301
+  "linter-ui-default": {}
   nuclide:
     "atom-ide-code-format":
       formatOnType: false

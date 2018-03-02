@@ -16,9 +16,10 @@ linter@2.2.0
 linter-js-yaml@1.2.8
 linter-ui-default@1.6.10
 markdown-toc@0.4.2
-minimap@4.29.7
+minimap@4.29.8
 open-recent@5.0.0
 pane-layout-plus@0.7.4
+pretty-json@1.6.4
 regex-railroad-diagram@0.19.4
 rulerz@0.4.3
 split-diff@1.5.2
