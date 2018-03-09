@@ -5,9 +5,20 @@
 set -e
 
 cd "$(dirname $0)"/..
+source ./functions/isIn
+update=1
 
 # install packages listed in 'packages' file
-sudo apt-get update
+for repo in $(grep -vE "^\s*#" repositories  | tr "\n" " ")
+do
+  if [ $(isIn "$repo" "`listppa`") == 0 ]; then
+    sudo add-apt-repository $repo
+    update=0
+  fi
+done
+if [ $update == 0 ]; then
+  sudo apt-get update
+fi
 sudo apt-get install $(grep -vE "^\s*#" packages  | tr "\n" " ")
 
 # find the installers and run them iteratively

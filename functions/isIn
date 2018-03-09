@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Usage: isIn anItem aList
+# Description: check an item is in a list
+#   1: exists
+#   0: no
+#
+isIn() {
+    [[ $2 =~ (^|[[:space:]])$1($|[[:space:]]) ]] && echo 1 || echo 0
+}
