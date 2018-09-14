@@ -18,6 +18,8 @@
       beautify_on_save: true
     ruby:
       default_beautifier: "Ruby Beautify"
+  "autocomplete-ansible":
+    pythonPaths: "/usr/bin/python"
   "autocomplete-modules":
     babelPluginModuleResolver: true
     webpack: true
@@ -57,6 +59,7 @@
     ]
     telemetryConsent: "no"
   editor:
+    fontSize: 12
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4

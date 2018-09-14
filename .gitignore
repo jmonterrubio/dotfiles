@@ -1,0 +1,11 @@
+atom.symlink/.apm
+atom.symlink/.node-gyp
+atom.symlink/blob-store
+atom.symlink/compile-cache
+atom.symlink/packages
+atom.symlink/nohup.out
+atom.symlink/storage
+
+aws.symlink/credentials
+
+git/gitconfig.local.symlink

@@ -1,7 +1,7 @@
 # file: ~/.gitignore_global
 # Compiled source #
 ###################
-*.com
+#*.com
 *.class
 *.dll
 *.exe
@@ -24,8 +24,8 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
-*.sqlite
+#*.sql
+#*.sqlite
 
 # OS generated files #
 ######################
@@ -38,6 +38,9 @@ ehthumbs.db
 Thumbs.db
 
 ### IntelliJ ###
-
 *.iml
 .idea
+
+
+### VS CODE ###
+.vscode
