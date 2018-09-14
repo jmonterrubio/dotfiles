@@ -1,3 +1,3 @@
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+wget -O /tmp/code.debhttps://go.microsoft.com/fwlink/?LinkID=760868
+TEMP_DEB="/tmp/code.deb" && wget -O "$TEMP_DEB" 'https://go.microsoft.com/fwlink/?LinkID=760868' && sudo dpkg --skip-same-version --force-all -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"

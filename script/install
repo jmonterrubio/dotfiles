@@ -11,7 +11,7 @@ update=1
 # install packages listed in 'packages' file
 for repo in $(grep -vE "^\s*#" repositories  | tr "\n" " ")
 do
-  if [ $(isIn "$repo" "`listppa`") == 0 ]; then
+  if [ $(isIn "$repo" "`source ./bin/listppa`") == 0 ]; then
     sudo add-apt-repository $repo
     update=0
   fi
@@ -19,7 +19,7 @@ done
 if [ $update == 0 ]; then
   sudo apt-get update
 fi
-sudo apt-get install $(grep -vE "^\s*#" packages  | tr "\n" " ")
+sudo apt-get install -y $(grep -vE "^\s*#" packages  | tr "\n" " ")
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
