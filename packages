@@ -6,3 +6,5 @@ curl
 ack-grep
 unzip
 terminator
+apt-transport-https
+code

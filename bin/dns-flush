@@ -11,4 +11,5 @@ sudo /etc/init.d/nscd restart
 # If you wanted to refresh your settings you could disable and then run
 sudo service network-manager restart
 
+sudo systemctl restart dnsmasq.service
 echo "DNS Flushed!";

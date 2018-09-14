@@ -41,14 +41,13 @@ script/bootstrap
 
 `dot` is a simple script that installs some dependencies. Tweak this script, and occasionally run dot from time to time to keep your environment fresh and up-to-date. You can find this script in `bin/`.
 
-Use `atom-package-install` to Installs the atom packages listed in your packages.txt file located at ~/.dotfiles/atom.symlink/packages.tx 
+Use `atom-package-install` to Installs the atom packages listed in your packages.txt file located at ~/.dotfiles/atom.symlink/packages.txt
 
 ## Acknowledgments
 
-* [Zach Holman](https://github.com/holman) - For the original [dotfiles](https://github.com/holman/dotfiles)
-* [Robby Russell](https://github.com/robbyrussell) - For [oh my zsh](http://ohmyz.sh/)
-* [Denys Dovhan](https://github.com/denysdovhan) - For the [spaceship zsh prompt](https://github.com/denysdovhan/spaceship-prompt)
-
+- [Zach Holman](https://github.com/holman) - For the original [dotfiles](https://github.com/holman/dotfiles)
+- [Robby Russell](https://github.com/robbyrussell) - For [oh my zsh](http://ohmyz.sh/)
+- [Denys Dovhan](https://github.com/denysdovhan) - For the [spaceship zsh prompt](https://github.com/denysdovhan/spaceship-prompt)
 
 <!-- Badges -->
 [npm-url]: https://npmjs.org/package/spaceship-prompt
