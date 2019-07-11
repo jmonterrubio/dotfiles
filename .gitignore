@@ -9,3 +9,5 @@ atom.symlink/storage
 aws.symlink/credentials
 
 git/gitconfig.local.symlink
+
+vscode.symlink/extensions

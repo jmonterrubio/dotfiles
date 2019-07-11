@@ -1,1 +1,1 @@
-pip install configobj --user
+pip install configobj

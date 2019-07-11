@@ -1,3 +1,5 @@
-pip install awscli --user
-rm ~/.aws_backup
-mv ~/.aws ~/.aws_backup
+#!/usr/bin/env bash
+
+pip install awscli
+#rm ~/.aws_backup
+#mv ~/.aws ~/.aws_backup

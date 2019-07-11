@@ -6,3 +6,14 @@ curl
 ack-grep
 unzip
 terminator
+python3-pip
+python-pip
+openjdk-8-jdk
+sshpass
+openvpn
+network-manager-openvpn
+resolvconf
+maven
+apt-transport-https
+ca-certificates
+software-properties-common
